@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 function Navhead() {
   return (
     <nav class="navbar navbar-expand-lg navbar-secondary bg-secondary sticky-top">
-      <Link class="navbar-brand" to={'/home'}>Navbar</Link>
+      <Link class="navbar-brand" to={'/home'}>A2Z</Link>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
