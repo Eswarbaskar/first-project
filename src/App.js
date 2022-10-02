@@ -1,6 +1,5 @@
 import './App.css';
- 
-import { Container } from 'react-bootstrap';
+
 import Home from './pages/Home';
 import Store from './pages/Store';
 import About from './pages/About';
@@ -9,7 +8,9 @@ import {
   BrowserRouter,
   Routes,
   Route,
-}from "react-router-dom";
+} from "react-router-dom";
+import Login from './pages/Login';
+import Signup from './pages/Signup';
 
 
 
@@ -20,19 +21,15 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-      <Navhead/>
-      <Container>
-        
-      
-        <Routes>
-          <Route path="/home" element={<Home/>}/>
-          <Route path="/store" element={<Store/>}/>
-          <Route path="/about" element={<About/>}/>
-          
-          
-
+        <Navhead />
+         <Routes>
+          <Route path="/home" element={<Home />} />
+          <Route path="/store" element={<Store />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/login" element={<Login/>} />
+          <Route path="/" element={<Signup/>} />
         </Routes>
-        </Container>
+
       </BrowserRouter>
 
     </div>

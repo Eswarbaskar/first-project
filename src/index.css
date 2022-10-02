@@ -2,3 +2,19 @@
   padding: 0;
   margin: 0;
 }
+.signup{
+  padding: 10px;
+  margin: 10px;
+  color: whitesmoke;
+}
+#login{
+  color:lightpink;
+  width: 100%;
+  padding: 20px;
+  margin: 20px;
+  background-color: bisque;
+}
+.image{
+  margin: 10px;
+  width: 100%;
+}

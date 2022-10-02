@@ -1,9 +1,4 @@
-#topbar{
-    background-color: #1f1f1f;
-    height: 10px;
-    width: 100%;
-    color: red;
-}
+
 body{
     background-color: white;
 }
@@ -15,6 +10,7 @@ body{
 #header{
     height: 80px;
     background-color: #fefefe;
+    text-align: center;
 }
 #header ul {
     float: right;
@@ -35,7 +31,7 @@ body{
     border-radius: 20px;
 }
 #content1{
-    width:32%;
+    width:100%;
     height: 350px;
     background-color: #f86900;
     float: left;
@@ -43,14 +39,15 @@ body{
     border-radius: 20px;
 }
 #content2{
-    width:32%;
+    width:100%;
     height: 350px;
     background-color: #ffc502;
     float: left;
     border-radius: 20px;
 }
+
 #content3{
-    width:32%;
+    width:100%;
     height: 350px;
     background-color: #a2c511;
     float: right;
@@ -71,7 +68,7 @@ body{
 }
 #bottom1{
     margin-top: 15px;
-    width: 65%;
+    width: 100%;
     
     float: left;
 }
@@ -87,7 +84,7 @@ body{
 }
 #bottom2{
     margin-top: 15px;
-    width: 35%;
+    width: 100%;
    
     float: left;
 }

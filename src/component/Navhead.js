@@ -1,38 +1,39 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 
 
 
 
 function Navhead() {
   return (
-    <nav class="navbar navbar-expand-lg navbar-secondary bg-secondary sticky-top">
-      <Link class="navbar-brand" to={'/home'}>A2Z</Link>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-
-          <li class="nav-item">
-            <Link class="nav-link" to={'/home'}>HOME</Link>
-          </li>
-          <li class="nav-item">
-            <Link class="nav-link" to={'/store'}>STORE</Link>
-          </li>
-          <li class="nav-item">
-            <Link class="nav-link" to={'/about'}>About</Link>
-          </li>
-
-        </ul>
-       
-      </div>
-    </nav>
+    
+    <Navbar bg="light" expand="lg" className='fixed-top'>
+    <Container>
+      <Navbar.Brand href="/home">A2Z</Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="me-auto" >
+          <Nav.Link href='/home'>Home</Nav.Link>
+          <Nav.Link href='/store'>Store</Nav.Link>
+          <Nav.Link href='/about'>About</Nav.Link>
+         </Nav>
+         
+      </Navbar.Collapse>
+      <Nav className="me-right" >
+          <Nav.Link href='/login'>Login</Nav.Link>
+          <Nav.Link href='/'>Signup</Nav.Link>
+        </Nav>
+    </Container>
+  </Navbar>
   );
 }
 
+
 export default Navhead;
+
+
 
 
 

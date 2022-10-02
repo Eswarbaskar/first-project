@@ -46,7 +46,7 @@ function Store() {
   }
   let handleRemove = (item) => {
     let remove = carditem.findIndex(obj => item.id === obj.id);
-    carditem.splice(remove,1)
+    carditem.splice(remove, 1)
     setcarditem([...carditem])
     setTotal(total - item.price)
   }
@@ -60,51 +60,49 @@ function Store() {
           </div>
         </div>
         <div className="row">
-          <div className="col-lg-10">
+          <div className="col-lg-9">
             <div className="row">
 
-              {
-                products.map((product) => {
-                  return <Cart product={product} handlecard={handlecard} />
 
-                })
-              }
+            {
+              products.map((product) => {
+                return <Cart product={product} handlecard={handlecard} />
+
+              })
+            }
             </div>
-
           </div>
-          <div className="col-lg-2">
+
+
+          <div className="col-lg-3">
             <div className="row text-center">
-              <div className="col-12">
-                <h2>CART</h2>
 
-              </div>
-            </div>
-            <div className="row">
+              
+              <h2>CART</h2>
               <div className="col-12">
-                <ol className="list-group list-group-numbered">
-                  {
-                    carditem.map((item) => {
-                      return <CartItem item={item} handleRemove={handleRemove} />
-                    })
-                  }
-                </ol>
-
+              <ol className="list-group list-group-numbered">
+                {
+                  carditem.map((item) => {
+                    return <CartItem item={item} handleRemove={handleRemove} />
+                  })
+                }
+              </ol>
               </div>
-            </div>
-            <div className="row">
-              <div className="col-12">
-                <h3>TOTAL:RS.{total}</h3>
+              <h3>TOTAL:RS.{total}</h3>
+              
 
-              </div>
             </div>
+
+
           </div>
-
-
-
         </div>
 
 
+
       </div>
+
+
+
 
 
 
