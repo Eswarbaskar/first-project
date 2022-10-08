@@ -5,7 +5,7 @@ function About() {
     <>
       <div className="container">
         <div className="row">
-          <div className="col-12">
+          <div className="col-lg-12">
             <div className='text-center'>
               <h3>About</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam id optio consequatur eligendi aliquid veniam libero, quis qui! Aut non ab sint, iusto earum inventore quasi id eligendi quia nihil.</p>

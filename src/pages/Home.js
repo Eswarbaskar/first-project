@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 function Home() {
     return (
         <>
-            <div id="container">
+            <div className="container">
                 <div id="header">
                     <h3>RELINCE</h3>
                 </div>
