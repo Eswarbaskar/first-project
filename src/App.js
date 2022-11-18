@@ -9,8 +9,9 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import Login from './pages/Login';
-import Signup from './pages/Signup';
+import Colourgame from './pages/Colourgame';
+// import Login from './pages/Login';
+// import Signup from './pages/Signup';
 
 
 
@@ -26,8 +27,9 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/store" element={<Store />} />
           <Route path="/about" element={<About />} />
-          <Route path="/login" element={<Login/>} />
-          <Route path="/" element={<Signup/>} />
+          <Route path="/colourgame" element={<Colourgame/>} />
+          {/* <Route path="/login" element={<Login/>} />
+          <Route path="/" element={<Signup/>} /> */}
         </Routes>
 
       </BrowserRouter>

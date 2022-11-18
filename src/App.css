@@ -131,3 +131,6 @@ body{
     font-weight: bold;
     
 }
+.add-color{
+    display: flex;
+}

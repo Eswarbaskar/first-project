@@ -1,7 +1,8 @@
 import React from 'react'
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+import { Link } from 'react-router-dom';
+// import Container from 'react-bootstrap/Container';
+// import Nav from 'react-bootstrap/Nav';
+// import Navbar from 'react-bootstrap/Navbar';
 
 
 
@@ -11,23 +12,40 @@ function Navhead() {
     <div className="container">
       <div className="row">
         <div className="col-lg-12">
-          <Navbar bg="light" expand="lg" className='fixed-top'>
-            <Container>
-              <Navbar.Brand href="/home">A2Z</Navbar.Brand>
-              <Navbar.Toggle aria-controls="basic-navbar-nav" />
-              <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="me-auto" >
-                  <Nav.Link href='/home'>Home</Nav.Link>
-                  <Nav.Link href='/store'>Store</Nav.Link>
-                  <Nav.Link href='/about'>About</Nav.Link>
-                  <Nav.Link href='/login'>Login</Nav.Link>
-                  <Nav.Link href='/'>Signup</Nav.Link>
-                </Nav>
+        
+        <nav class="navbar fixed-top bg-light navbar-expand-lg ">
+            <div class="container-fluid">
+              <Link class="navbar-brand" to={"/home"}>Mobile</Link>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <Link class="nav-link active" aria-current="page" to={"/home"}>Home</Link>
+                  </li>
+                  <li class="nav-item">
+                    <Link class="nav-link active" aria-current="page" to={"/store"}>Store</Link>
+                  </li>
+                  <li class="nav-item">
+                    <Link class="nav-link active" aria-current="page" to={"/about"}>about</Link>
+                  </li>
+                  <li class="nav-item">
+                    <Link class="nav-link active" aria-current="page" to={"/colourgame"}>Game</Link>
+                  </li>
 
-              </Navbar.Collapse>
+                 
+  {/* <div class="container-fluid"> */}
+    {/* <a class="navbar-brand" href="#">Fixed top</a>
+  </div>
+</nav> */}
 
-            </Container>
-          </Navbar>
+
+                </ul>
+
+              </div>
+            </div>
+          </nav>
         </div>
       </div>
     </div>
