@@ -133,4 +133,5 @@ body{
 }
 .add-color{
     display: flex;
+    justify-content: center;
 }

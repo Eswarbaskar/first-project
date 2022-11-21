@@ -3,13 +3,21 @@ import React from 'react'
 function Colorbox({color}) {
     let styles = {
         backgroundColor:color,
-        height:"35px",
-        width:"300px",
-        margin:"2px"
+        height:"30px",
+        // width:"500px",
+        // margin:"2px",
 
     }
   return (
-    <div style={styles}></div>
+    <div className="container m-0">
+      <div className="row justify-content-center">
+        <div className="col-md-10">
+        
+        <div style={styles} className="border border-2"></div>
+
+        </div>
+      </div>
+    </div>
   )
 }
 
