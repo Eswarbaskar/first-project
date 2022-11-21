@@ -9,9 +9,9 @@ function Colourgame() {
         fontSize: '25px'
     };
     return (
-        // <div className="container text-center m-4 p-4">
-        //     <div className="row justify-content-center">
-        //         <div className="col-lg-12 col-sm-10">
+        <div className="container text-center m-4 p-4">
+            <div className="row justify-content-center">
+                <div className="col-lg-12 col-sm-10">
                     <div>
                         <div className='add-color text-center  m-4 p-4'>
                             <input
@@ -32,10 +32,10 @@ function Colourgame() {
                             })
                         }
                     </div>
-        //         </div>
-        //     </div>
+                </div>
+             </div>
 
-        // </div>
+      </div>
 
 
 
