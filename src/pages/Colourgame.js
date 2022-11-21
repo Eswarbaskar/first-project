@@ -6,7 +6,7 @@ function Colourgame() {
     const [colorlist, setcolorlist] = useState([])
     const styles = {
         backgroundColor: color,
-        fontSize: '35px'
+        fontSize: '25px'
     };
     return (
         <div className="container text-center m-4 p-4">
